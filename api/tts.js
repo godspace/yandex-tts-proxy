@@ -12,7 +12,7 @@ export default async function handler(req, res) {
 
   const body = req.body || {};
   const text = (body.text || req.query?.text || '').trim();
-  const voice = body.voice || req.query?.voice || 'marina';
+  const voice = body.voice || req.query?.voice || 'jane';
   const emotion = body.emotion || req.query?.emotion || 'neutral';
   const speed = body.speed || req.query?.speed || '1.0';
   const lang = body.lang || req.query?.lang || 'ru-RU';
